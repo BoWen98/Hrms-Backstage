@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hrms-Backstage.iml" filepath="$PROJECT_DIR$/.idea/Hrms-Backstage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ihrm_Parent/Ihrm_Parent.iml" filepath="$PROJECT_DIR$/Ihrm_Parent/Ihrm_Parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ihrm_common/Ihrm_common.iml" filepath="$PROJECT_DIR$/Ihrm_common/Ihrm_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ihrm_common_model/Ihrm_common_model.iml" filepath="$PROJECT_DIR$/Ihrm_common_model/Ihrm_common_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ihrm_company/Ihrm_company.iml" filepath="$PROJECT_DIR$/Ihrm_company/Ihrm_company.iml" />
+    </modules>
+  </component>
+</project>
