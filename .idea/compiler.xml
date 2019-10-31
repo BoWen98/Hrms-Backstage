@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Ihrm_company" />
         <module name="Ihrm_common" />
+        <module name="Ihrm_system" />
         <module name="Ihrm_common_model" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="Ihrm_common_model" target="1.8" />
       <module name="Ihrm_company" target="1.8" />
       <module name="Ihrm_Parent" target="1.8" />
+      <module name="Ihrm_system" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +25,7 @@
       <module name="Ihrm_common" options="-parameters" />
       <module name="Ihrm_common_model" options="-parameters" />
       <module name="Ihrm_company" options="-parameters" />
+      <module name="Ihrm_system" options="-parameters" />
     </option>
   </component>
 </project>

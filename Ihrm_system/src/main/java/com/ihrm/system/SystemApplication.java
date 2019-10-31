@@ -1,4 +1,4 @@
-package com.ihrm.company;
+package com.ihrm.system;
 
 import com.ihrm.common.utils.IdWorker;
 import org.springframework.boot.SpringApplication;
@@ -8,19 +8,19 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * @ProjectName: Hrms-Backstage
- * @Package: com.ihrm.company
- * @ClassName: CompanyApplication
+ * @Package: com.ihrm.system
+ * @ClassName: SystemApplication
  * @Author: Bowen
- * @Description: 企业启动类
- * @Date: 2019/10/30 18:03
+ * @Description: 用户启动类
+ * @Date: 2019/10/31 14:24
  * @Version: 1.0.0
  */
 @SpringBootApplication(scanBasePackages = "com.ihrm")
-@EntityScan("com.ihrm.domain.company")
-public class CompanyApplication {
+@EntityScan("com.ihrm.domain.system")
+public class SystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CompanyApplication.class, args);
+        SpringApplication.run(SystemApplication.class, args);
     }
 
     @Bean
