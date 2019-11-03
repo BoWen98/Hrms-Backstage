@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Ihrm_common_model" />
         <module name="Ihrm_company" />
         <module name="Ihrm_common" />
         <module name="Ihrm_system" />
-        <module name="Ihrm_common_model" />
+        <module name="Ihrm_eureka" />
+        <module name="Ihrm_employee" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Ihrm_common" target="1.8" />
       <module name="Ihrm_common_model" target="1.8" />
       <module name="Ihrm_company" target="1.8" />
+      <module name="Ihrm_employee" target="1.8" />
+      <module name="Ihrm_eureka" target="1.8" />
       <module name="Ihrm_Parent" target="1.8" />
       <module name="Ihrm_system" target="1.8" />
     </bytecodeTargetLevel>
@@ -25,6 +29,8 @@
       <module name="Ihrm_common" options="-parameters" />
       <module name="Ihrm_common_model" options="-parameters" />
       <module name="Ihrm_company" options="-parameters" />
+      <module name="Ihrm_employee" options="-parameters" />
+      <module name="Ihrm_eureka" options="-parameters" />
       <module name="Ihrm_system" options="-parameters" />
     </option>
   </component>

@@ -5,8 +5,13 @@ import com.ihrm.common.utils.IdWorker;
 import com.ihrm.company.dao.DepartmentDao;
 import com.ihrm.domain.company.Department;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Service
@@ -54,6 +59,25 @@ public class DepartmentService extends BaseService {
      * 4.查询全部部门列表
      */
     public List<Department> findAll(String companyId) {
+        /**
+         * 用户构造查询条件
+         *      1.只查询companyId
+         *      2.很多的地方都需要根据companyId查询
+         *      3.很多的对象中都具有companyId
+         *
+         */
+//        Specification<Department> spec = new Specification<Department>() {
+//            /**
+//             * 用户构造查询条件
+//             *      root   ：包含了所有的对象数据
+//             *      cq     ：一般不用
+//             *      cb     ：构造查询条件
+//             */
+//            public Predicate toPredicate(Root<Department> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+//                //根据企业id查询
+//                return cb.equal(root.get("companyId").as(String.class),companyId);
+//            }
+//        };
         return departmentDao.findAll(getSpec(companyId));
     }
 
@@ -62,5 +86,12 @@ public class DepartmentService extends BaseService {
      */
     public void deleteById(String id) {
         departmentDao.deleteById(id);
+    }
+
+    /**
+     * 根据部门编码和企业id查询部门
+     */
+    public Department findByCode(String code, String companyId) {
+        return departmentDao.findByCodeAndCompanyId(code,companyId);
     }
 }

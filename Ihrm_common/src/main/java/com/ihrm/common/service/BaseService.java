@@ -10,13 +10,13 @@ import javax.persistence.criteria.Root;
 public class BaseService<T> {
 
     protected Specification<T> getSpec(String companyId) {
-
-        return (Specification<T>) new Specification() {
+        Specification<T> spect = new Specification() {
             @Override
             public Predicate toPredicate(Root root, CriteriaQuery criteriaQuery, CriteriaBuilder cb) {
                 //根据企业id查询
-                return cb.equal(root.get("companyId").as(String.class), companyId);
+                return cb.equal(root.get("companyId").as(String.class),companyId);
             }
         };
+        return spect;
     }
 }

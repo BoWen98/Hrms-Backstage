@@ -12,3 +12,18 @@ spring:
     database: mysql
     show-sql: true
     open-in-view: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+jwt:
+  config:
+  key: ihrm-system
+  ttl: 3600000
+ai:
+  appId: 17682127
+  apiKey: wINrTskvRWlpQ5WhpuDaQ0Hs
+  secretKey: pItKofYk5GOjNTHp3I8qXnIOzm6n6jha
+  imageType: BASE64
+  groupId: bowen
+qr:
+  url: http://localhost:8080/#/facelogin

@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/Ihrm_common_model/pom.xml" />
         <option value="$PROJECT_DIR$/Ihrm_company/pom.xml" />
         <option value="$PROJECT_DIR$/Ihrm_system/pom.xml" />
+        <option value="$PROJECT_DIR$/Ihrm_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/Ihrm_employee/pom.xml" />
       </list>
     </option>
   </component>
