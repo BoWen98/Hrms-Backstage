@@ -12,10 +12,11 @@ import java.util.Date;
 
 public class QiniuUploadUtil {
 
-    private static final String accessKey = "COuoDRVa7JLsuurzIvQSI_pEDceHDw3yGfJEmvwv";
-    private static final String secretKey = "3RWpTjB5Jxg3QosUFr4mxbHXJ5JR2m6AHQqYsSlr";
-    private static final String bucket = "ihrm-bucket";
-    private static final String prix = "http://pkbivgfrm.bkt.clouddn.com/";
+    private static final String accessKey = "AoIhtnVyjmqkAMowxqpa-w6vm1OQqr-yxAibVa3M";
+    private static final String secretKey = "";
+    private static final String bucket = "bowen-test";
+    private static final String prix = "http://q0fue6uhb.bkt.clouddn.com/";
+
     private UploadManager manager;
 
     public QiniuUploadUtil() {
