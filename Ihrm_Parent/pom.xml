@@ -21,7 +21,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <fastjson.version>1.2.47</fastjson.version>
-        <mysql.verion>6.0.6</mysql.verion>
+        <mysql.verion>8.0.16</mysql.verion>
     </properties>
 
     <dependencyManagement>
